@@ -1,0 +1,22 @@
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\obj\Debug\LabelPush.csproj.AssemblyReference.cache
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\obj\Debug\LabelPush.csproj.SuggestedBindingRedirects.cache
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\obj\Debug\YAFL.Form1.resources
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\obj\Debug\LabelPush.csproj.GenerateResource.cache
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\obj\Debug\LabelPush.csproj.CoreCompileInputs.cache
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\bin\Debug\LabelPush.exe.config
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\bin\Debug\LabelPush.exe
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\bin\Debug\LabelPush.pdb
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\obj\Debug\LabelPush.Properties.Resources.resources
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\obj\Debug\LabelPush.exe
+C:\Users\short\Desktop\LM-Barcoder - Copy\YAFL\obj\Debug\LabelPush.pdb
+C:\Users\short\Desktop\QCLabel\obj\Debug\LabelPush.csproj.AssemblyReference.cache
+C:\Users\short\Desktop\QCLabel\obj\Debug\LabelPush.csproj.SuggestedBindingRedirects.cache
+C:\Users\short\Desktop\QCLabel\obj\Debug\YAFL.Form1.resources
+C:\Users\short\Desktop\QCLabel\obj\Debug\LabelPush.csproj.GenerateResource.cache
+C:\Users\short\Desktop\QCLabel\obj\Debug\LabelPush.csproj.CoreCompileInputs.cache
+C:\Users\short\Desktop\QCLabel\bin\Debug\QcLabeler.exe.config
+C:\Users\short\Desktop\QCLabel\bin\Debug\QcLabeler.exe
+C:\Users\short\Desktop\QCLabel\bin\Debug\QcLabeler.pdb
+C:\Users\short\Desktop\QCLabel\obj\Debug\QcLabeler.Properties.Resources.resources
+C:\Users\short\Desktop\QCLabel\obj\Debug\QcLabeler.exe
+C:\Users\short\Desktop\QCLabel\obj\Debug\QcLabeler.pdb
