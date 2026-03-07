@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace YAFL
 {
@@ -17,6 +18,7 @@ namespace YAFL
         public Form1(){
   
             InitializeComponent();
+            settingsLoad();
          
             this.AcceptButton = button1;
         }
@@ -73,6 +75,40 @@ namespace YAFL
                 Console.WriteLine(ex.Message);
             }
         }
+
+        public void settingsLoad()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("settings.xml");
+
+            XmlNode node = doc.DocumentElement.SelectSingleNode("/SETTINGS/IP");
+            string netPrinter = node.InnerText;
+            textBox1.Text = netPrinter;
+
+            XmlNode zaPortNode = doc.DocumentElement.SelectSingleNode("/SETTINGS/PORT");
+             string zdPort = zaPortNode.InnerText;
+             textBox2.Text = zdPort;
+
+             XmlNode node2 = doc.DocumentElement.SelectSingleNode("/SETTINGS/PREFIX");
+             string defaultPrintType = node2.InnerText;
+             textBox4.Text = defaultPrintType;
+
+             XmlNode node3 = doc.DocumentElement.SelectSingleNode("/SETTINGS/DPI300");
+             string dpi = node3.InnerText;
+              if(dpi == "TRUE" || dpi == "True" || dpi == "true")
+            {
+                checkBox1.Checked = true;
+            } 
+            
+
+            // textBox6.Text = ztPrinter;
+
+            // XmlNode ztPortNode = doc.DocumentElement.SelectSingleNode("/PRINTERS/ZTPORT");
+            //  string ztPort = ztPortNode.InnerText;
+            //  ztPortBox.Text = ztPort;
+
+        }
+
 
         private void label3_Click(object sender, EventArgs e)
         {
