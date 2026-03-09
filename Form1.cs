@@ -40,17 +40,19 @@ namespace YAFL
                 //string dpi300 = "";
 
                 sb.AppendLine("^XA^LH0,0^PQ1^PON");
+
                 if (checkBox1.Checked)
                 {
                     sb.AppendLine("^BY3");
-                    sb.AppendLine("^FO100,56^BCN,40,Y^FH^FD>;" + barcode + "^FS");
+                    sb.AppendLine("^FO100,56^BC,80,Y^FD" + barcode + "^FS");
                     sb.AppendLine("^BY2");
                 }
                 else
                 {
                     sb.AppendLine("^BY2");
-                    sb.AppendLine("^FO100,56^BCN,40,Y^FH^FD>;" + barcode + "^FS");
+                    sb.AppendLine("^FO100,56^BC,80,Y^FD" + barcode + "^FS");
                 }   
+
                 sb.AppendLine("^XZ");
                 Console.Out.WriteLine("Printing: " + barcode.ToString());
             }
@@ -59,7 +61,6 @@ namespace YAFL
                 // Open connection
                 System.Net.Sockets.TcpClient client = new System.Net.Sockets.TcpClient();
                 client.Connect(ipAddress, port);
-
 
                 // Write ZPL String to connection
                 System.IO.StreamWriter writer = new System.IO.StreamWriter(client.GetStream());
