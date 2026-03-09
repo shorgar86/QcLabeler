@@ -37,7 +37,7 @@ namespace YAFL
             if (textBox3.Text != "")
             {
                 string barcode = textBox4.Text + textBox3.Text;
-                string dpi300 = "";
+                //string dpi300 = "";
 
                 sb.AppendLine("^XA^LH0,0^PQ1^PON");
                 if (checkBox1.Checked)
@@ -52,7 +52,7 @@ namespace YAFL
                     sb.AppendLine("^FO100,56^BCN,40,Y^FH^FD>;" + barcode + "^FS");
                 }   
                 sb.AppendLine("^XZ");
-
+                Console.Out.WriteLine("Printing: " + barcode.ToString());
             }
 
             try {
@@ -95,18 +95,12 @@ namespace YAFL
 
              XmlNode node3 = doc.DocumentElement.SelectSingleNode("/SETTINGS/DPI300");
              string dpi = node3.InnerText;
-              if(dpi == "TRUE" || dpi == "True" || dpi == "true")
+              
+            if(dpi == "TRUE" || dpi == "True" || dpi == "true")
             {
                 checkBox1.Checked = true;
             } 
-            
-
-            // textBox6.Text = ztPrinter;
-
-            // XmlNode ztPortNode = doc.DocumentElement.SelectSingleNode("/PRINTERS/ZTPORT");
-            //  string ztPort = ztPortNode.InnerText;
-            //  ztPortBox.Text = ztPort;
-
+           
         }
 
 
@@ -129,7 +123,7 @@ namespace YAFL
         private void button1_Click(object sender, EventArgs e)
         {
                     printDirect();
-                    Console.Out.WriteLine("Printing Single");
+                    
                 }
 
 
@@ -141,6 +135,11 @@ namespace YAFL
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/shorgar86/QcLabeler");
         }
     }
 }
