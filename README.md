@@ -1,4 +1,4 @@
-<b>Unsolicated QC Barcode Generator for clinical Laboratories using Zebra ZPL printers</b><br>
+<b>Unsolicated QC Barcode printing for clinical Laboratories using networked Zebra ZPL printers</b><br>
 
 <b>Predefined Fields in setting.xml</b><br>
 IP - IP address of printer<br>
