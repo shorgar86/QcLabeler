@@ -13,7 +13,8 @@ namespace YAFL
 {
     public partial class Form1 : Form
     {
-
+        string dpi;
+        string qclRot;
         int port;
         public Form1(){
   
@@ -38,8 +39,16 @@ namespace YAFL
             {
                 string barcode = textBox4.Text + textBox3.Text;
                 //string dpi300 = "";
-
-                sb.AppendLine("^XA^LH0,0^PQ1^PON");
+                
+                if(qclRot == "TRUE" || qclRot == "True" || qclRot == "true")
+                {
+                    sb.AppendLine("^XA^LH0,0^PQ1^PON^FWI");
+                }
+                else
+                {
+                    sb.AppendLine("^XA^LH0,0^PQ1^PON");
+                }
+               
 
                 if (checkBox1.Checked)
                 {
@@ -96,8 +105,11 @@ namespace YAFL
 
              XmlNode node3 = doc.DocumentElement.SelectSingleNode("/SETTINGS/DPI300");
              string dpi = node3.InnerText;
-              
-            if(dpi == "TRUE" || dpi == "True" || dpi == "true")
+
+            XmlNode qclRot = doc.DocumentElement.SelectSingleNode("/SETTINGS/ROTATE180");
+            string r180 = qclRot.InnerText;
+
+            if (dpi == "TRUE" || dpi == "True" || dpi == "true")
             {
                 checkBox1.Checked = true;
             } 
